@@ -1,0 +1,19 @@
+{
+  "name": "Export-Multiple-Module-Formats-with-Webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "bin": {
+    "Export-Multiple-Module-Formats-with-Webpack": "compile.js"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf dist",
+    "compile": "npm run clean && node --harmony bin/compile"
+  },
+  "keywords": [],
+  "author": "Khalil Zhang <kandmforever@126.com> (http://starandtina.github.io/)",
+  "license": "MIT"
+}
