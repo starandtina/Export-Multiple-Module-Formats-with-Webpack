@@ -1,10 +1,10 @@
 var path = require('path');
 
 module.exports = [
-    createConfig('var'),
-    createConfig('commonjs2'),
-    createConfig('amd'),
-    createConfig('umd')
+  createConfig('var'),
+  createConfig('commonjs2'),
+  createConfig('amd'),
+  createConfig('umd')
 ];
 
 function createConfig(target) {
@@ -15,6 +15,16 @@ function createConfig(target) {
       filename: 'myLibrary.' + target + '.js',
       library: 'MyLibrary',
       libraryTarget: target
+    },
+    module: {
+      loaders: [{
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015']
+        }
+      }]
     }
   };
 }
