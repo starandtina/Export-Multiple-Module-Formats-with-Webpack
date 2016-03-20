@@ -12,8 +12,8 @@ function createConfig(target) {
     entry: './src/index.js',
     output: {
       path: path.join(__dirname, 'dist'),
-      filename: 'myLibrary.' + target + '.js',
-      library: 'MyLibrary',
+      filename: 'redux.' + target + '.js',
+      library: 'Redux',
       libraryTarget: target
     },
     module: {
