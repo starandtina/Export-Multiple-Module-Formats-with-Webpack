@@ -42,8 +42,7 @@ export function applyMiddleware(...middlewares) {
     }));
     dispatch = compose(...chain)(store.dispatch);
 
-    return {...store, dispatch
-    };
+    return {...store, dispatch};
   };
 }
 
